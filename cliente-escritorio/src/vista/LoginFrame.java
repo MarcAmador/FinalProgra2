@@ -28,7 +28,7 @@ public class LoginFrame extends JFrame {
     public LoginFrame() {
         this.loginService = new LoginClienteService();
 
-        setTitle("Acceso al Sistema");
+        setTitle("Acceso");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
 
@@ -102,8 +102,7 @@ public class LoginFrame extends JFrame {
                     this,
                     "Complete el usuario y la contraseña.",
                     "Campos requeridos",
-                    JOptionPane.WARNING_MESSAGE
-            );
+                    JOptionPane.WARNING_MESSAGE);
             return;
         }
 
@@ -120,8 +119,7 @@ public class LoginFrame extends JFrame {
                         this,
                         resultado.getMensaje(),
                         "Acceso denegado",
-                        JOptionPane.ERROR_MESSAGE
-                );
+                        JOptionPane.ERROR_MESSAGE);
                 txtPassword.setText("");
                 txtPassword.requestFocusInWindow();
             }
@@ -130,8 +128,7 @@ public class LoginFrame extends JFrame {
                     this,
                     "No se pudo conectar con la API.",
                     "Error de conexión",
-                    JOptionPane.ERROR_MESSAGE
-            );
+                    JOptionPane.ERROR_MESSAGE);
         } finally {
             btnIngresar.setEnabled(true);
         }

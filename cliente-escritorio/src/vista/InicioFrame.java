@@ -20,7 +20,7 @@ import java.awt.Insets;
 public class InicioFrame extends JFrame {
 
     public InicioFrame(ResultadoLogin datos) {
-        setTitle("Sesión Activa");
+        setTitle("Bienvenido");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
 
