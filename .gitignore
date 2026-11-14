@@ -1,0 +1,4 @@
+api-login/target/
+cliente-escritorio/bin/
+*.log
+.DS_Store

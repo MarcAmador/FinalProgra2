@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Main (Cliente JFrame)",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "jdt.ls-java-project",
+            "classPaths": [
+                "${workspaceFolder}/cliente-escritorio/bin",
+                "${workspaceFolder}/cliente-escritorio/lib/flatlaf-3.7.2.jar"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "ApiLoginApplication (Spring Boot)",
+            "request": "launch",
+            "mainClass": "com.examen.apilogin.ApiLoginApplication",
+            "projectName": "api-login"
+        }
+    ]
+}
+
